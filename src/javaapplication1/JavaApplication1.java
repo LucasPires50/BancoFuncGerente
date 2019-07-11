@@ -16,8 +16,8 @@ public class JavaApplication1 {
         
         //criar gerente
         Gerente g = new Gerente();
-        g.setNome("Daniel");
-        g.setCpf("789456123");
+        g.setNome("       Daniel     ");
+        g.setCpf("1234567896");
         f.setSalario(500);
         g.setNumFuncGerenciados(10);
         
@@ -26,16 +26,18 @@ public class JavaApplication1 {
         
         System.out.println("Dados do funcionáro: ");
         System.out.println("Nome: " + f.getNome());
-        System.out.println("CPF: " + f.getCpf());
+        System.out.println("CPF: " + g.cpfFormatado());
         System.out.println("Salario: " + f.getSalario());
         System.out.println("Bonificação: " + f.getBonificacao());
         System.out.println("---------------");
         System.out.println("Dados do gerente: ");
         System.out.println("Nome: " + g.getNome());
-        System.out.println("CPF: " + g.getCpf());
+        System.out.println("CPF: " + g.cpfFormatado());
         System.out.println("Salario: " + g.getSalario());
         System.out.println("Bonificação: " + g.getBonificacao());
         System.out.println("Número funcionário: " + g.getNumFuncGerenciados());
+        System.out.println("Nome maiusculo: "+g.nomeMaiusculo());
+        
 
         //jogando a classe gerente dentro da classe funcionário, e isso funciona pq as duas são compativeis
         Funcionario geretenTeste = g;

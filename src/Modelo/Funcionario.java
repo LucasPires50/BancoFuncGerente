@@ -1,10 +1,9 @@
 
 package Modelo;
-
-public class Funcionario {
+//extendendo classe pessoa, herdando tudo da classe pessoa
+public class Funcionario extends Pessoa{
     
-       protected String nome;
-       protected String cpf;
+      
        protected double salario;
        protected double Bonificacao;
 
