@@ -8,5 +8,9 @@ public interface PessoaInterface {
     public String cpfFormatado();
     public String nomeMaiusculo();
     public String nomeMinusculo();
+    public String cnpjFormatado();
+    public String cepFormatado();
+    public String telefoneFormatado();
+    
     
 }
