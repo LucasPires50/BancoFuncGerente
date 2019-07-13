@@ -1,10 +1,9 @@
 
 package Modelo;
-
-public class Funcionario {
+//extendendo classe pessoa, herdando tudo da classe pessoa
+public class Funcionario extends Pessoa{
     
-       protected String nome;
-       protected String cpf;
+      
        protected double salario;
        protected double Bonificacao;
 
@@ -44,5 +43,29 @@ public class Funcionario {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    
+     public String getCnpj() {
+        return this.cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getCep() {
+        return this.cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getTelefone() {
+        return this.telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+   
 }
